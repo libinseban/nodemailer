@@ -9,9 +9,11 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome to the backend!" });
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
 
 app.post("/sendmail", (req, res) => {
     const { to, subject, text } = req.body;
