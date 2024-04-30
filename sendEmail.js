@@ -31,7 +31,7 @@ app.post("/sendmail", (req, res) => {
 
     const mailOptions = {
         from: "libinseban97@gmail.com",
-        to: "libinseban01@gmail.com",
+        to: " ashin209@gmail.com",
         subject: "Nodemailer Assignment",
         text: "Successfully sended messege through nodemailer",
     };
