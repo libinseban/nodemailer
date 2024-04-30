@@ -46,6 +46,7 @@ app.post("/sendmail", (req, res) => {
             return res.json({ message: "Email sent successfully." });
         }
     });
+   
 });
 
 app.listen(PORT, () => {
